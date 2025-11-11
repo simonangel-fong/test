@@ -2,8 +2,8 @@ name: "scheduler test - new"
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
-  workflow_dispatch:  # Allows manual triggering
+    - cron: "50 20 * * *"
+  workflow_dispatch: # Allows manual triggering
 
 jobs:
   test_schedule:
@@ -13,8 +13,8 @@ jobs:
         run: |
           echo "Workflow triggered at: $(date)"
           echo "Trigger event: ${{ github.event_name }}"
-      
+
       - name: Every time
         run: |
           echo "This step will always run" 
-          echo "New" 
+          echo "New"
