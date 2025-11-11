@@ -1,4 +1,4 @@
-name: "scheduler test"
+name: "scheduler test - new"
 
 on:
   schedule:
@@ -15,4 +15,6 @@ jobs:
           echo "Trigger event: ${{ github.event_name }}"
       
       - name: Every time
-        run: echo "This step will always run" 
+        run: |
+          echo "This step will always run" 
+          echo "New" 
