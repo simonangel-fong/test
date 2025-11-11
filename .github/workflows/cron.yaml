@@ -2,8 +2,8 @@ name: "scheduler test - new"
 
 on:
   schedule:
-    - cron: "10 21 * * *"
-    - cron: "*/2 * * * *"
+    - cron: "50 21 * * *"
+    - cron: "*/9 * * * *"
   workflow_dispatch: # Allows manual triggering
 
 jobs:
